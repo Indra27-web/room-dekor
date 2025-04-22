@@ -6,31 +6,87 @@
   <title>Room Dekor</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      padding: 40px 20px;
       text-align: center;
     }
 
-    h1 {
-      color: #333;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    .container {
+    .product-card {
       background: white;
-      padding: 40px;
       border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <h1>Selamat Datang di Room Dekor!</h1>
-    <p>Website ini akan menampilkan inspirasi dekorasi ruangan.</p>
+    <p>Inspirasi dekorasi ruangan yang stylish dan estetik</p>
+  </div>
+
+  <div class="content">
+    <h2>Produk Dekorasi Pilihan</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Lampu+Estetik" alt="Lampu Estetik" />
+        <h3>Lampu Estetik</h3>
+        <p>Lampu tidur dengan desain minimalis.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Tanaman+Hias" alt="Tanaman Hias" />
+        <h3>Tanaman Hias</h3>
+        <p>Hadirkan nuansa alami di dalam ruangan.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Rak+Dinding" alt="Rak Dinding" />
+        <h3>Rak Dinding</h3>
+        <p>Praktis dan stylish untuk dekorasi tembok.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
